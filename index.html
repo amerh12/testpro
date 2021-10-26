@@ -1,42 +1,132 @@
-<html>
-    <head>
-    <script src="script.js"></script>
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Example Title</title>
+    <meta name="author" content="Your Name">
+    <meta name="description" content="Example description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-       <div class="maindiv">
-   <h1>Simple Interest Calculator</h1>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
 
-        Amount <input type="number"  id="principal">  <br/>
-        No. of Years <select id="years">
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">7</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-    <option value="10">10</option>
-    
-</select>  <br/>
-       Interest Rate <input type="range"  id="rate" min=1 max=20  value=10.25 step=0.25 onchange="updateRate()">   
-        <span id="rate_val">
-            10.25%
-        </span>
-        <button  onclick="compute()">Compute Interest</button>
-</div>
-       <span id="result">
-
-        </span>
-       
-     
-    </body>
+<body>
+    <header>
+        <script>
+            $(document).ready(function () {
+                $("#btt").click(function () {
+                    $("nav").toggle();
+                });
+            });
+        </script>
+        <div>
+            <div class="logo">AVTOPRALNICA AH</div> <i id="btt" class="uil uil-bars"></i> </div>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="#">Domov</a></li>
+                    <li><a href="#">O Nam</a></li>
+                    <li><a href="#">Storitve</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="vugla">
+            <h1 class="gNaslov"> Wash your car</h1> <a class="btn" href="#">FIND US</a> </div>
+    </header>
+    <main>
+        <section id="nina" class="prviTxt">
+            <h2 class="podnaslov">Pranje avtomobilov naslednje generacije zdaj v Ljubljani</h2>
+            <p class="txt">Smo specializirano podjetje za parne storitve za zagotavljanje najboljše storitve v svojem razredu za naše stranke v Ljubljani.
+                <br/> Pranje s paro je najnovejša tehnologija, ki se uporablja v storitvah pranja avtomobilov. Pomaga pri boljšem čiščenju kot tradicionalni visokotlačni razpršilec vode. Poleg tega prihranimo veliko vode, saj potrebujemo le 3 litre vode na avto.</p>
+        </section>
+        <section id="nina"><img class="prvSlika" src="pexels-pixabay-210627.jpg"></section>
+        <div class="grayPovrsina">
+            <h2 class="podnaslov2">O PODJETJU</h2>
+            <p class="drTxt"> Smo specializirano podjetje za parne storitve za zagotavljanje najboljše storitve v svojem razredu za naše stranke v Ljubljani. </p>
+            <br/>
+            <div id="count-test-2" class="demo"> </div>
+            <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+            <script type="text/javascript" src="jQuerySimpleCounter.js"></script>
+            <script type="text/javascript">
+                $('#count-test').jQuerySimpleCounter({
+                    start: 100
+                    , end: 0
+                    , duration: 4000
+                });
+                $('#count-test-2').jQuerySimpleCounter({
+                    duration: 4000
+                });
+            </script>
+            <script type="text/javascript">
+                var _gaq = _gaq || [];
+                _gaq.push(['_setAccount', 'UA-36251023-1']);
+                _gaq.push(['_setDomainName', 'jqueryscript.net']);
+                _gaq.push(['_trackPageview']);
+                (function () {
+                    var ga = document.createElement('script');
+                    ga.type = 'text/javascript';
+                    ga.async = true;
+                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(ga, s);
+                })();
+            </script>
+            <br/>
+            <p class="drdrTxt">LET IZKUŠNJE</p>
+        </div>
+        <div class="backo">
+            <div class="txt2">
+                <p>U autopraonici AH svojim klijentima želimo pružiti brza, praktična i učinkovita pranja automobila. S više od 45 stranica i brojeći ih, GooGoo je vodeća tvrtka za ekspresno pranje automobila na jugu i ima lokacije koje se pojavljuju diljem SAD-a u državama kao što je Ohio. Ponosimo se time što
+                    <br/>
+                    <br/> pružamo profesionalnu kvalitetu pranja plus besplatan osvježivač zraka i korištenje naših usisavača mega konjskih snaga svaki put kada posjetite. Bilo da trebate jednokratno brzo pranje ili trebate da vaš automobil uvijek izgleda sjajno – AH Car Wash ima savršeno pranje za vas!
+                    <br/>
+                    <br/> Imamo mnogo prikladnih lokacija i opcija Unlimited Wash Cluba, tako da u bilo kojem trenutku možete dobiti onaj čisti automobil koji volite! Samo se opustite u svom autu. Mi radimo pranje za vas!</p>
+            </div>
+            <div class="zala"><img class="drgSlika" src="pexels-tima-miroshnichenko-6873005.jpg"></div>
+        </div>
+    </main>
     <footer>
+        <div class="content">
+            <div class="left box">
+                <div class="upper">
+                    <div class="topic">About us</div>
+                    <p>CodingLab is a channel where you can learn HTML, CSS, and also JavaScript along with creative CSS Animations and Effects.</p>
+                </div>
+                <div class="lower">
+                    <div class="topic">Contact us</div>
+                    <div class="phone"> <a href="#"><i class="fas fa-phone-volume"></i>+007 9089 6767</a> </div>
+                    <div class="email"> <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a> </div>
+                </div>
+            </div>
+            <div class="middle box">
+                <div class="topic">Our Services</div>
+                <div><a href="#">Web Design, Development</a></div>
+                <div><a href="#">Web UX Design, Reasearch</a></div>
+                <div><a href="#">Web User Interface Design</a></div>
+                <div><a href="#">Theme Development, Design</a></div>
+                <div><a href="#">Mobile Application Design</a></div>
+                <div><a href="#">Wire raming & Prototyping</a></div>
+            </div>
+            <div class="right box">
+                <div class="topic">Subscribe us</div>
+                <form action="#">
+                    <input type="text" placeholder="Enter email address">
+                    <input type="submit" name="" value="Send">
+                    <div class="media-icons"> <a href="#"><i class="fab fa-facebook-f"></i></a> <a href="#"><i class="fab fa-instagram"></i></a> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-youtube"></i></a> <a href="#"><i class="fab fa-linkedin-in"></i></a> </div>
+                </form>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>Copyright © 2020 <a href="#">CodingLab</a> All rights reserved</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src=""></script>
+</body>
 
-        &#169; This Calculator belongs to AMER
-
-
-</footer>
 </html>

@@ -1,20 +1,468 @@
-body {background-color:white;
-font-family:arial;
-color:black;
-width 300px;
-border-radius 25px;
-align:center;
+                                                @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+                                                * {
+                                                    padding: 0;
+                                                    margin: 0;
+                                                    font-family: 'Lato', sans-serif;
+                                                }
 
-}
-h1{color:grey;
-font-family:verdana;
+                                                @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+                                                * {
+                                                    margin: 0;
+                                                    padding: 0;
+                                                    box-sizing: border-box;
+                                                    font-family: 'Poppins', sans-serif;
+                                                    text-decoration: none;
+                                                }
 
-}
-.maindiv {
-    background-color:white;
-    color:black;
-    width:300px;
-    padding:20px;
-    border-radius:25px;
-    align:center
-}
+                                                footer {
+                                                    width: 100%;
+                                                    margin-top: 0%;
+                                                    bottom: 0;
+                                                    left: 0;
+                                                    background: #111;
+                                                }
+
+                                                footer .content {
+                                                    max-width: 1350px;
+                                                    margin: auto;
+                                                    padding: 20px;
+                                                    display: flex;
+                                                    flex-wrap: wrap;
+                                                    justify-content: space-between;
+                                                }
+
+                                                footer .content p,
+                                                a {
+                                                    color: #fff;
+                                                }
+
+                                                footer .content .box {
+                                                    width: 33%;
+                                                    transition: all 0.4s ease;
+                                                }
+
+                                                footer .content .topic {
+                                                    font-size: 22px;
+                                                    font-weight: 600;
+                                                    color: #fff;
+                                                    margin-bottom: 16px;
+                                                }
+
+                                                footer .content p {
+                                                    text-align: justify;
+                                                }
+
+                                                footer .content .lower .topic {
+                                                    margin: 24px 0 5px 0;
+                                                }
+
+                                                footer .content .lower i {
+                                                    padding-right: 16px;
+                                                }
+
+                                                footer .content .middle {
+                                                    padding-left: 80px;
+                                                }
+
+                                                footer .content .middle a {
+                                                    line-height: 32px;
+                                                }
+
+                                                footer .content .right input[type="text"] {
+                                                    height: 45px;
+                                                    width: 100%;
+                                                    outline: none;
+                                                    color: #d9d9d9;
+                                                    background: #000;
+                                                    border-radius: 5px;
+                                                    padding-left: 10px;
+                                                    font-size: 17px;
+                                                    border: 2px solid #222222;
+                                                }
+
+                                                footer .content .right input[type="submit"] {
+                                                    height: 42px;
+                                                    width: 100%;
+                                                    font-size: 18px;
+                                                    color: #d9d9d9;
+                                                    background: #eb2f06;
+                                                    outline: none;
+                                                    border-radius: 5px;
+                                                    letter-spacing: 1px;
+                                                    cursor: pointer;
+                                                    margin-top: 12px;
+                                                    border: 2px solid #eb2f06;
+                                                    transition: all 0.3s ease-in-out;
+                                                }
+
+                                                .content .right input[type="submit"]:hover {
+                                                    background: none;
+                                                    color: #eb2f06;
+                                                }
+
+                                                footer .content .media-icons a {
+                                                    font-size: 16px;
+                                                    height: 45px;
+                                                    width: 45px;
+                                                    display: inline-block;
+                                                    text-align: center;
+                                                    line-height: 43px;
+                                                    border-radius: 5px;
+                                                    border: 2px solid #222222;
+                                                    margin: 30px 5px 0 0;
+                                                    transition: all 0.3s ease;
+                                                }
+
+                                                .content .media-icons a:hover {
+                                                    border-color: #eb2f06;
+                                                }
+
+                                                footer .bottom {
+                                                    width: 100%;
+                                                    text-align: right;
+                                                    color: #d9d9d9;
+                                                    padding: 0 40px 5px 0;
+                                                }
+
+                                                footer .bottom a {
+                                                    color: #eb2f06;
+                                                }
+
+                                                footer a {
+                                                    transition: all 0.3s ease;
+                                                }
+
+                                                footer a:hover {
+                                                    color: #eb2f06;
+                                                }
+
+                                                @media (max-width:1100px) {
+                                                    footer .content .middle {
+                                                        padding-left: 50px;
+                                                    }
+                                                }
+
+                                                @media (max-width:950px) {
+                                                    footer .content .box {
+                                                        width: 50%;
+                                                    }
+                                                    .content .right {
+                                                        margin-top: 40px;
+                                                    }
+                                                }
+
+                                                @media (max-width:560px) {
+                                                    footer {
+                                                        position: relative;
+                                                    }
+                                                    footer .content .box {
+                                                        width: 100%;
+                                                        margin-top: 30px;
+                                                    }
+                                                    footer .content .middle {
+                                                        padding-left: 0;
+                                                    }
+                                                }
+
+                                                header {
+                                                    background-color: darkslategrey;
+                                                    background-image: url("http://127.0.0.1:50324/pexels-Background.jpg");
+                                                    height: 370px;
+                                                    background-position: center;
+                                                    background-repeat: no-repeat;
+                                                    background-size: cover;
+                                                }
+
+                                                #btt {
+                                                    margin-top: 1%;
+                                                    float: right;
+                                                    color: #D2691E;
+                                                    margin-right: 2%;
+                                                    font-size: 33px;
+                                                    text-decoration-style: double;
+                                                    cursor: pointer;
+                                                }
+
+                                                .logo {
+                                                    margin-top: 2%;
+                                                    float: left;
+                                                    display: inline-block;
+                                                    color: #D2691E;
+                                                    margin-left: 2%;
+                                                    font-size: 25px;
+                                                    text-decoration-style: double;
+                                                    cursor: pointer;
+                                                }
+
+                                                nav {
+                                                    display: none;
+                                                    color: black;
+                                                    background: white;
+                                                    width: 100%;
+                                                    height: 100vh;
+                                                }
+
+                                                nav ul {
+                                                    list-style-type: none;
+                                                    padding-top: 15%;
+                                                    text-align: center;
+                                                }
+
+                                                nav ul li {
+                                                    padding-top: 10%;
+                                                }
+
+                                                nav ul li a {
+                                                    text-decoration: none;
+                                                    color: black;
+                                                    font-size: 20px;
+                                                }
+
+                                                #vugla {
+                                                    text-align: center;
+                                                    padding-top: 35%;
+                                                    color: #D2691E;
+                                                }
+
+                                                .btn {
+                                                    border: 1px solid white;
+                                                    color: #D2691E;
+                                                    padding: 5px 15px;
+                                                    font-size: 20px;
+                                                    background-color: transparent;
+                                                    text-decoration: none;
+                                                }
+
+                                                .btn:hover {
+                                                    background-color: #D2691E;
+                                                    color: white;
+                                                }
+
+                                                .gNaslov {
+                                                    padding-bottom: 20px;
+                                                }
+
+                                                .prvSlika {
+                                                    display: block;
+                                                    margin-left: auto;
+                                                    margin-right: auto;
+                                                    width: 80%;
+                                                    margin-top: 5%;
+                                                }
+
+                                                .prviTxt {
+                                                    width: 100%;
+                                                    margin-top: 2%;
+                                                }
+
+                                                .podnaslov {
+                                                    width: 90%;
+                                                    margin: auto;
+                                                    padding: auto;
+                                                    text-align: center;
+                                                    margin-bottom: 2%;
+                                                }
+
+                                                .txt {
+                                                    width: 90%;
+                                                    text-align: center;
+                                                    margin: auto;
+                                                    padding: auto;
+                                                }
+
+                                                .grayPovrsina {
+                                                    margin-top: 5%;
+                                                    background-color: #000222;
+                                                    height: 35vh;
+                                                    color: white;
+                                                }
+
+                                                .podnaslov2 {
+                                                    width: 90%;
+                                                    margin: auto;
+                                                    padding: auto;
+                                                    padding-top: 4%;
+                                                    text-align: center;
+                                                    margin-bottom: 2%;
+                                                    color: white;
+                                                }
+
+                                                .drTxt {
+                                                    width: 90%;
+                                                    text-align: center;
+                                                    margin-left: 4%;
+                                                    padding: auto;
+                                                }
+
+                                                .drdrTxt {
+                                                    width: 90%;
+                                                    text-align: center;
+                                                    margin-left: 4%;
+                                                    padding: auto;
+                                                }
+
+                                                .demo {
+                                                    width: 90%;
+                                                    display: inline-block;
+                                                    text-align: center;
+                                                    font-size: 85px;
+                                                    color: #efefef;
+                                                    margin-left: 4%;
+                                                    padding: auto;
+                                                }
+
+                                                .txt2 {
+                                                    width: 90%;
+                                                    margin: auto;
+                                                    padding: auto;
+                                                    margin-top: 2%;
+                                                }
+
+                                                .drgSlika {
+                                                    width: 80%;
+                                                    height: 70%;
+                                                }
+
+                                                .zala {
+                                                    width: 100%;
+                                                    text-align: center;
+                                                    margin: auto;
+                                                    margin-top: 7%;
+                                                    padding: auto;
+                                                }
+
+                                                @media screen and (max-width: 375px) {
+                                                    .grayPovrsina {
+                                                        height: 45vh;
+                                                    }
+                                                }
+
+                                                @media screen and (min-width: 760px) {
+                                                    * {
+                                                        padding: 0%;
+                                                        margin: 0%;
+                                                    }
+                                                    #vugla {
+                                                        padding-top: 12%;
+                                                    }
+                                                    nav {
+                                                        display: inline;
+                                                        float: right;
+                                                        background: transparent;
+                                                        width: 30%;
+                                                        height: 10%;
+                                                        margin-right: 16%;
+                                                        margin-top: 2%;
+                                                    }
+                                                    nav ul {
+                                                        list-style-type: none;
+                                                        width: 45vw;
+                                                        padding-top: 0%;
+                                                    }
+                                                    nav ul li {
+                                                        width: 20%;
+                                                        display: inline-flex;
+                                                        padding-left: 0%;
+                                                        padding-top: 0%;
+                                                    }
+                                                    nav ul li a {
+                                                        width: 100%;
+                                                        padding: 0% 10%;
+                                                        color: black;
+                                                        font-size: 20px;
+                                                        text-align: center;
+                                                        text-decoration: none;
+                                                    }
+                                                    nav ul li a:hover {
+                                                        color: #D2691E;
+                                                        text-decoration-line: underline;
+                                                    }
+                                                    #btt {
+                                                        display: none;
+                                                    }
+                                                    #nina {
+                                                        display: inline-block;
+                                                        width: 45%;
+                                                        padding: auto;
+                                                        margin-left: 4%;
+                                                        text-align: center;
+                                                        float: left;
+                                                    }
+                                                    .prvSlika {
+                                                        display: inline-block;
+                                                    }
+                                                    .podnaslov {
+                                                        margin-bottom: 4%;
+                                                    }
+                                                    .txt {
+                                                        font-size: 20px;
+                                                    }
+                                                    .grayPovrsina {
+                                                        display: inline-block;
+                                                        clear: both;
+                                                        padding-top: 0%;
+                                                        background-color: #000222;
+                                                        height: 50vh;
+                                                        color: white;
+                                                        width: 100%;
+                                                    }
+                                                    .drTxt {
+                                                        float: right;
+                                                        width: 45%;
+                                                        text-align: center;
+                                                        margin-right: 5%;
+                                                        margin-top: 5%;
+                                                        padding: 0;
+                                                        font-size: 25px;
+                                                    }
+                                                    .drdrTxt {
+                                                        clear: both;
+                                                        font-size: 25px;
+                                                        float: left;
+                                                        width: 45%;
+                                                        text-align: center;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        display: inline;
+                                                    }
+                                                    .demo {
+                                                        float: left;
+                                                        width: 45%;
+                                                        text-align: center;
+                                                        font-size: 85px;
+                                                        color: #efefef;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                    }
+                                                    .podnaslov2 {
+                                                        font-size: 35px;
+                                                        margin-bottom: 2%;
+                                                        padding-top: 2%;
+                                                    }
+                                                    .backo {
+                                                        display: inline-block;
+                                                        width: 100%;
+                                                    }
+                                                    .txt2 {
+                                                        display: inline-block;
+                                                        float: right;
+                                                        width: 45%;
+                                                        margin: auto;
+                                                        padding: auto;
+                                                        margin: 2%;
+                                                        font-size: 18px;
+                                                    }
+                                                    .drgSlika {
+                                                        width: 80%;
+                                                        height: 50%;
+                                                    }
+                                                    .zala {
+                                                        float: left;
+                                                        display: inline-block;
+                                                        width: 45%;
+                                                        text-align: center;
+                                                        margin: auto;
+                                                        margin: 2%;
+                                                        padding: auto;
+                                                    }
+                                                }
